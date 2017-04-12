@@ -64,6 +64,11 @@ p {
   line-height: 1.7em;
 }
 
+body::selection {
+  
+  color: white;
+}
+
 /* header */
 
 #logo {
@@ -180,5 +185,28 @@ label {
   @extend .has-error;
   .form-control {
     color: $state-danger-text;
+  }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 30px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
+.signup-prompt {
+  text-align: center;
+  margin-top: 30px;
+  padding: 0 110px;
+  h2 {
+    font-weight: bold;
   }
 }
