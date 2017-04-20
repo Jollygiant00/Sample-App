@@ -1,0 +1,16 @@
+<% provide(:title, "Edit Profile") %>
+<% provide(:button_text, 'Save Changes') %>
+
+<h1>Update your profile</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <a href="http://gravatar.com/emails" rel="noopener" target="_blank" class="btn btn-primary btn-sm">Change Image</a>
+    </div>
+    
+    <%= render 'layouts/form' %>
+
+  </div>
+</div>

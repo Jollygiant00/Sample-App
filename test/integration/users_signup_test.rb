@@ -14,7 +14,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
         end
         
         assert_template 'users/new'             # test for new user html template
-        assert_select 'div#error_explanation'   # test for error explanation class
+        assert_select 'div#error_explanation'   # test for error explanation id
         assert_select 'div.field_with_errors'   # test for error field class
     end
   
