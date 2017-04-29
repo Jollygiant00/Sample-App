@@ -23,26 +23,8 @@ $gray-medium-light: #eaeaea;
 
 /* universal*/
 
-* {
-  color: #cccccc;
-}
-
-a {
-  color: #cccccc;
-  
-  &:hover {
-    color: #cccccc;
-    text-decoration: underline;
-  }
-}
-
 body {
   padding-top: 60px;
-  background: #404040; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #404040 , #808080 , #404040); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #404040, #808080 , #404040); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #404040, #808080 , #404040); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #404040 , #808080 , #404040); /* Standard syntax */
 }
 
 section {
@@ -66,8 +48,6 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
-  color: #262626;
-  text-shadow: 1px 1px #333333;
 }
 
 h2 {
@@ -76,8 +56,6 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #262626;
-  text-shadow: 1px 1px #333333;
 }
 
 p {
@@ -201,7 +179,7 @@ label {
 .field_with_errors {
   @extend .has-error;
   .form-control {
-    color: $state-danger-text;
+    color: white;
   }
 }
 
@@ -231,15 +209,18 @@ label {
 .btn-sm {
   margin-top: 22px;
   background: #1a1a1a;
+  color: white;
+  width: 140px;
 }
 
 .btn, .btn-sm {
   background: #262626;
   
   &:hover{
-    transition: 0.2s ease;
+    transition: 0.2s;
     background: white;
     color: black;
+    border: 1px solid black;
   }
 }
 
@@ -258,15 +239,17 @@ label {
     padding: 10px 10px;
     border-bottom: 1px solid $gray-lighter;
     border-radius: 5px;
-    background: #cccccc;
     color: black;
     margin-bottom: 10px;
+    
+    &:hover {
+      transition: 0.2s;
+      background: #d9d9d9;
+      color: #262626;
+    }
+    
+    &:hover a {
+      color: #262626;
+    }
   }
-}
-
-.users a {
-  color: #404040;
-  font: 20px;
-  font-weight: bold;
-  margin: 15px 15px;
 }
