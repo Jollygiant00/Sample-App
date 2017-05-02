@@ -184,7 +184,7 @@ label {
 }
 
 .checkbox {
-  margin-top: -10px;
+  margin-top: -8px;
   margin-bottom: 30px;
   span {
     margin-left: 20px;
@@ -227,6 +227,10 @@ label {
 .form-control {
   background: #262626;
   color: white;
+}
+
+.pass-reset {
+  float: right;
 }
 
 /* Users index */
